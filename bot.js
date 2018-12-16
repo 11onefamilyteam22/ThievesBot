@@ -1,16 +1,34 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
-var prefix = "=";
+const client = new Discord.Client():
+
+client.on('ready', () => {
+        console.log('╔[════════════]╗')
+        console.log(' Bot Is Online')
+        console.log('╚[════════════]╝')
+        console.log('')
+        console.log('╔[════════════════════════════════════]╗');
+        console.log('')
+        console.log(' Logged in as * [ " ${client.user.username} " ] ');
+        console.log( ' Welcome Bro , UserName * [ " ${client.user.username} " ]' );
+        console.log(  :  * [ " ${client.user.tag} " ]);
+        console.log('')
+        console.log('╚[════════════════════════════════════]╝')
+        console.log('')
+        console.log('╔[════════════]╗')
+        console.log('')
+        console.log( 'Have Fun -TIGER IS ONE  ')
+        console.log('')
+        console.log('╚[════════════]╝')
+        
+});
+
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', msg => {
-  if (msg.content === '.') {
-    msg.reply('Welcome to the Server Shop thieves!');
-  }
-});
+
 //
 
 //
@@ -68,10 +86,7 @@ gg.send({embed : new Discord.RichEmbed()
 
 
 
-//
-//
-//
-//
+
 client.on('message', async message => {
   if(message.content.startsWith(prefix + "Sug")) {
   await  message.channel.send(`اكتب`)
@@ -89,23 +104,12 @@ client.on('message', async message => {
           })
 
 
-//
-//
-//
-//
-//
-//
+
 client.on('guildMemberAdd', (member) => {
 member.addRole(member.guild.roles.find('name', 'Members'));
 });
 
-//
-//
-//
-//
-//
-//
-//
+
 
 
 client.on('message', message => {
@@ -120,19 +124,7 @@ client.on('message', message => {
       message.channel.send(IzRo);
     });
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/////////////////////////////////
-////////////////////////////////
+
 client.on('ready', () => {
     setInterval(function(){
         client.guilds.get('518712821660516360').roles.find('name', 'Disco').edit({color: 'RANDOM'})
@@ -140,11 +132,7 @@ client.on('ready', () => {
 
 
 })
-//
-///
-////
-////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
+
 client.on("ready", () => {
 
     var guild;
@@ -222,10 +210,6 @@ client.on("guildMemberAdd", (member) => {
     });
 
 });
-//
-///
-/////////////////////
-//////////////////////
 
 
 
@@ -233,7 +217,8 @@ client.on("guildMemberAdd", (member) => {
 
 
 
-/////////////////////////////////////////////////////
+
+
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'chat');/////By Mahmoud-QuaStyle
     let memberavatar = member.user.avatarURL
@@ -336,5 +321,5 @@ client.on('guildMemberAdd', member => {
 
 
 
-client.login('process.env.BOT_TOKEN');
+client.login(process.env.BOT_TOKEN);
 
